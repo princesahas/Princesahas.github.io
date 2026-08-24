@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sahas | Student Portfolio</title>
 
     <style>
@@ -13,21 +14,25 @@
             font-family: Arial, sans-serif;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.7;
         }
 
         header {
             background: #111827;
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 80px 20px;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 45px;
             margin-bottom: 10px;
         }
 
@@ -38,30 +43,70 @@
 
         nav {
             background: white;
+            padding: 16px;
             text-align: center;
-            padding: 15px;
             position: sticky;
             top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
 
         nav a {
-            color: #222;
             text-decoration: none;
-            margin: 0 12px;
+            color: #111827;
+            margin: 0 10px;
             font-weight: bold;
         }
 
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 35px;
             background: white;
             border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
 
         h2 {
-            margin-bottom: 15px;
             color: #111827;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .student {
+            background: #f8fafc;
+            border-left: 5px solid #2563eb;
+            padding: 22px;
+            margin: 22px 0;
+            border-radius: 8px;
+        }
+
+        .student strong {
+            color: #111827;
+        }
+
+        .lesson {
+            background: #eef2ff;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .plan {
+            display: grid;
+            gap: 18px;
+        }
+
+        .year {
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 10px;
+            border-left: 5px solid #111827;
         }
 
         .skills span {
@@ -73,112 +118,397 @@
         }
 
         .project {
-            padding: 15px;
-            margin-top: 15px;
-            border-left: 4px solid #111827;
-            background: #f9fafb;
+            background: #f8fafc;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #2563eb;
         }
 
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 35px;
             background: #111827;
             color: white;
             margin-top: 50px;
         }
 
-        a {
-            color: #2563eb;
+        @media(max-width:600px) {
+            header h1 {
+                font-size: 35px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 25px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Sahas</h1>
-        <p>Student | Aspiring Developer | Lifelong Learner</p>
-    </header>
+<header>
+    <h1>Sahas</h1>
+    <p>Student | Technology Enthusiast | Lifelong Learner</p>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#goals">Goals</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#profiles">Student Profiles</a>
+    <a href="#lessons">Lessons</a>
+    <a href="#plan">My Plan</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <section id="about">
-        <h2>About Me</h2>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I am Sahas, a college student interested in technology,
+        programming and continuous learning.
+
+        This website was created as part of my vacation work to study the
+        profiles of successful students and understand how students can
+        develop their academic, technical and professional profiles during
+        college.
+
+        I will continue updating this website as I gain new skills,
+        complete projects, participate in competitions and gain experience.
+    </p>
+</section>
+
+
+<section id="profiles">
+    <h2>Profiles of Successful Students</h2>
+
+    <p>
+        I studied student profiles from premier institutes to understand
+        different paths involving academics, projects, research,
+        competitions, internships and leadership.
+    </p>
+
+
+    <div class="student">
+        <h3>1. Ray Wang — MIT</h3>
+
         <p>
-            Hello! I am Sahas, a college student interested in technology,
-            programming and learning new skills. This website is my personal
-            portfolio where I will document my learning journey, projects,
-            achievements and experiences.
+            Ray Wang is an MIT student studying Artificial Intelligence and
+            Decision Making and Physics.
+
+            He has been involved in MIT's Undergraduate Research Opportunities
+            Program (UROP) since Fall 2022.
         </p>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+        <p>
+            His research experience includes computer vision, generative
+            modeling and medical imaging. He also worked on a method related
+            to large language model fine-tuning and later worked on improving
+            image generation quality.
+        </p>
 
-        <div class="skills">
-            <span>C Programming</span>
-            <span>HTML</span>
-            <span>Problem Solving</span>
-            <span>Computer Fundamentals</span>
-            <span>Git & GitHub</span>
+        <p>
+            One important part of his journey is that an idea developed during
+            his research eventually became a paper.
+        </p>
+
+        <div class="lesson">
+            <strong>What I learned:</strong>
+            Long-term research and curiosity can turn an idea into meaningful
+            technical work. Students should explore different areas before
+            deciding what they want to specialize in.
         </div>
-    </section>
+    </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
 
-        <div class="project">
-            <h3>My Personal Portfolio</h3>
-            <p>
-                A personal website created using HTML and CSS and hosted using
-                GitHub Pages.
-            </p>
+    <div class="student">
+        <h3>2. Cole Firlie — MIT</h3>
+
+        <p>
+            Cole Firlie is an MIT student studying Computer Science and
+            Molecular Biology.
+        </p>
+
+        <p>
+            Through UROP, he has worked on different technically challenging
+            areas including machine-learning flight control for quadcopters,
+            reactor optics and astronaut physiology systems.
+        </p>
+
+        <p>
+            His profile shows how combining knowledge from different fields
+            can create opportunities in areas such as space technology,
+            machine learning and engineering.
+        </p>
+
+        <div class="lesson">
+            <strong>What I learned:</strong>
+            I should not restrict myself to only classroom subjects. Building
+            projects and exploring interdisciplinary areas can reveal new
+            career possibilities.
+        </div>
+    </div>
+
+
+    <div class="student">
+        <h3>3. Heloise Hoffmann — Stanford University</h3>
+
+        <p>
+            Heloise Hoffmann is a Stanford bioengineering student who became
+            involved in research related to facioscapulohumeral muscular
+            dystrophy (FSHD).
+        </p>
+
+        <p>
+            She participated in Stanford's iGEM synthetic biology team.
+            The team designed a proposed treatment approach and won a gold
+            medal at the iGEM Grand Jamboree.
+        </p>
+
+        <p>
+            She and her teammates later won Stanford's Undergraduate
+            Entrepreneurship Program pitch competition and received
+            $50,000 to continue developing their research project.
+        </p>
+
+        <p>
+            Her journey demonstrates the connection between academic
+            knowledge, research, teamwork, competition and entrepreneurship.
+        </p>
+
+        <div class="lesson">
+            <strong>What I learned:</strong>
+            A student can take an idea from learning, to research, to
+            competition and eventually towards a real-world solution.
+        </div>
+    </div>
+
+
+    <div class="student">
+        <h3>4. Tarsh Swarnkar — IIIT Kota</h3>
+
+        <p>
+            Tarsh Swarnkar is a student of IIIT Kota whose profile demonstrates
+            a strong combination of projects, research, competitions and
+            leadership.
+        </p>
+
+        <p>
+            He worked as a Research Intern at DRDO, where he developed a GUI
+            using OpenCV and Tkinter and explored computer vision applications.
+        </p>
+
+        <p>
+            He also served as a Placement Coordinator at IIIT Kota.
+        </p>
+
+        <p>
+            His team won the Amdocs GenAI Hackathon after competing against
+            more than 11,500 participants from over 300 colleges. Their project
+            was an AI-powered career guidance platform called AI Career Hub.
+        </p>
+
+        <p>
+            He was also selected for Amazon ML Summer School 2024.
+        </p>
+
+        <div class="lesson">
+            <strong>What I learned:</strong>
+            Projects, internships, competitions and leadership can work
+            together to create a strong technical profile.
+        </div>
+    </div>
+
+</section>
+
+
+<section id="lessons">
+    <h2>What I Learned From These Profiles</h2>
+
+    <p>
+        After studying these students, I understood that a strong student
+        profile is not created only through academic marks.
+    </p>
+
+    <br>
+
+    <p>
+        The common areas I noticed were:
+    </p>
+
+    <ul>
+        <li>Strong academic foundation</li>
+        <li>Continuous learning</li>
+        <li>Technical skills</li>
+        <li>Personal and team projects</li>
+        <li>Research experience</li>
+        <li>Competitions and hackathons</li>
+        <li>Internships</li>
+        <li>Leadership and teamwork</li>
+        <li>Professional networking</li>
+        <li>Documenting achievements and projects</li>
+    </ul>
+
+    <br>
+
+    <p>
+        I realized that I should start building my profile gradually instead
+        of waiting until my final year.
+    </p>
+</section>
+
+
+<section id="plan">
+    <h2>My College Development Plan</h2>
+
+    <div class="plan">
+
+        <div class="year">
+            <h3>Year 1 — Build the Foundation</h3>
+
+            <ul>
+                <li>Strengthen programming fundamentals</li>
+                <li>Learn Git and GitHub</li>
+                <li>Build small projects</li>
+                <li>Create and improve my LinkedIn profile</li>
+                <li>Participate in beginner-level competitions</li>
+                <li>Explore different areas of technology</li>
+            </ul>
         </div>
 
-        <div class="project">
-            <h3>Future Projects</h3>
-            <p>
-                More projects will be added as I continue learning and
-                developing my technical skills.
-            </p>
+
+        <div class="year">
+            <h3>Year 2 — Build Skills and Projects</h3>
+
+            <ul>
+                <li>Learn data structures and algorithms</li>
+                <li>Build more meaningful projects</li>
+                <li>Participate in hackathons</li>
+                <li>Complete useful certifications</li>
+                <li>Start exploring research opportunities</li>
+                <li>Contribute to open-source projects</li>
+            </ul>
         </div>
-    </section>
 
-    <section id="goals">
-        <h2>My Goals</h2>
+
+        <div class="year">
+            <h3>Year 3 — Gain Experience</h3>
+
+            <ul>
+                <li>Apply for internships</li>
+                <li>Work on advanced projects</li>
+                <li>Explore research with faculty</li>
+                <li>Participate in major competitions</li>
+                <li>Build a stronger GitHub portfolio</li>
+                <li>Develop professional networking</li>
+            </ul>
+        </div>
+
+
+        <div class="year">
+            <h3>Year 4 — Prepare for the Future</h3>
+
+            <ul>
+                <li>Complete a strong final-year project</li>
+                <li>Apply for placements or higher studies</li>
+                <li>Prepare a professional resume</li>
+                <li>Strengthen LinkedIn and GitHub profiles</li>
+                <li>Present my projects and achievements professionally</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+        <span>C Programming</span>
+        <span>HTML</span>
+        <span>Problem Solving</span>
+        <span>Computer Fundamentals</span>
+        <span>Git & GitHub</span>
+    </div>
+
+    <p style="margin-top:20px;">
+        I will continue adding skills as I learn and develop them.
+    </p>
+</section>
+
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>Personal Portfolio Website</h3>
 
         <p>
-            My goal is to continuously improve my technical skills, participate
-            in competitions and hackathons, work on meaningful projects,
-            explore internships and research opportunities, and build a strong
-            professional profile during my college journey.
+            A personal portfolio website created using HTML and CSS and
+            published using GitHub Pages.
         </p>
-    </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <div class="project">
+        <h3>Future Projects</h3>
 
         <p>
-            GitHub:
-            <a href="https://github.com/princesahas" target="_blank">
-                github.com/princesahas
-            </a>
+            More technical projects will be added here as I continue my
+            learning journey.
         </p>
+    </div>
+</section>
 
-        <p>
-            LinkedIn: Add your LinkedIn profile here
-        </p>
-    </section>
 
-    <footer>
-        <p>© 2026 Sahas. Built with HTML & CSS.</p>
-    </footer>
+<section id="contact">
+    <h2>My Online Profile</h2>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/princesahas" target="_blank">
+            github.com/princesahas
+        </a>
+    </p>
+
+    <p style="margin-top:10px;">
+        <strong>LinkedIn:</strong>
+        LinkedIn profile will be added soon.
+    </p>
+</section>
+
+
+<section>
+    <h2>References</h2>
+
+    <p>
+        Student information was studied from official university and institute
+        student-profile pages, including MIT UROP, Stanford University and
+        IIIT Kota.
+    </p>
+
+    <p style="margin-top:10px;">
+        This website summarizes publicly available information for educational
+        purposes.
+    </p>
+</section>
+
+
+<footer>
+    <p>© 2026 Sahas | Student Portfolio</p>
+</footer>
 
 </body>
 </html>
